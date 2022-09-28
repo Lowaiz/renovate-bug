@@ -2,5 +2,19 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "pinDigest"
+      ],
+      "addLabels": ["pinDigest"],
+      "groupName": "pinDigest updates",
+      "groupSlug": "pinDigest-deps-update",
+      "automergeType": "pr"
+    }
   ]
 }

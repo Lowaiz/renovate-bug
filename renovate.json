@@ -4,18 +4,5 @@
     "config:base",
     "docker:pinDigests"
   ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "pinDigest"
-      ],
-      "addLabels": ["pinDigest"],
-      "groupName": "pinDigest updates",
-      "groupSlug": "pinDigest-deps-update",
-      "automergeType": "pr"
-    }
-  ]
+  "rangeStrategy": "pin"
 }
